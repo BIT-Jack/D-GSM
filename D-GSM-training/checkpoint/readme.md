@@ -1,0 +1,1 @@
+To fit the default setting, you can create filefolders named "social-stgcnn-MA, social-stgcnn-FT, social-stgcnn-ZS, social-stgcnn-EP, and social-stgcnn-SR" in this direction. You can also create your own folders to contain your trained models, while changing the direction in scripts, too.
