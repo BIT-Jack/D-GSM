@@ -5,8 +5,8 @@ This is the official code of the paper *"Continual Interactive Behavior Learning
 ## Enviroment and set up
 Codes are implemented in Ubuntu 18.04. 
 
-### Python = 3.6
-### 
+#### Python = 3.6
+#### Pytorch $\geq$ 1.09
 
 The detailed requirement of setup is shown in *requirement.txt*.
 You can have everything set up by running:
