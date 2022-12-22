@@ -35,7 +35,7 @@ python3 data_extraction.py
 
 *STEP 2:* Use "main_cot_lap_kld.py" to estimate GMMs of scenario cases, and then, to calculate CKLDs between scenarios.
 ```
-python3 main_cot_lap_kld.py"
+python3 main_cot_lap_kld.py
 ```
 
 
