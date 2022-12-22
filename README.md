@@ -29,13 +29,14 @@ File folds named "Testing" and "Traffic Divergence Measuring" are codes for mode
 These codes are the implementation of experiments described in **Appendix B** of the paper, which explores the influence of data amount on conditional Kullback-Leibler divergence (CKLD) calculations. Under the direction "./Traffic Divergence Measuring", the file fold "data" is to contain processed cases, and "mdn_model" contains models of Mixture Density Networks (MDN) used in the paper.
 ### Running
 *STEP 1:* Use "data_extraction.py" to obtain the final processed cases. The processed cases need to be saved as seperate files for different scenarios.
-'''
+```
 python3 data_extraction.py
-'''
+```
+
 *STEP 2:* Use "main_cot_lap_kld.py" to estimate GMMs of scenario cases, and then, to calculate CKLDs between scenarios.
-'''
+```
 python3 main_cot_lap_kld.py"
-'''
+```
 
 
 
