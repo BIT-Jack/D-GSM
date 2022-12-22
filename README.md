@@ -40,6 +40,27 @@ python3 data_extraction.py
 python3 main_cot_lap_kld.py
 ```
 
+## Usage of Codes: D-GSM-training
+These codes are implementations of experiments represented in **Section IV**, where base models are applied with the proposed CL approach to continually learn interactive behaviors in continuous scenarios.
 
+### Running
+*STEP 1:* Extract data features from raw data for trajectory prediction by using "./D-GSM-training/datasets/preprocess_for_learning.py". Please edit the right file direction in the script, then you can run:
+```
+python3 preprocess_for_learning.py
+```
+If you want to use the default codes without changing the file directions, please remember to save different datasets representing different scenarios, sperately. (Detailed setting can be found in "./D-GSM-training/datasets/readme.md")
+
+*STEP 2:* Train the base model in one single scenario (CL is not needed in this situation). We have provided trained model in the single scenario MA in file fold "./D-GSM-training/checkpoint/social-stgcnn-MA" for further training in continuous scenarios.
+
+*STEP 3:* Train the model in contiuous scenarios by directly running .sh files: "./D-GSM-training/train_DGSM_two_mem3500.sh" and "./D-GSM-training/train_DGSM_two_mem3500.sh" are for model with D-GSM and GSM (see **Experimental settings** in the paper *Section IV-B*).
+
+```
+bash train_DGSM_two_mem3500.sh
+```
+
+```
+bash train_GSM_two_mem3500.sh
+```
+It should be noted that, as examples, the .sh files described above are set for two continuous scenarios (MA->FT) with 3,500 samples of memory data. If you want to train model further (eg. 3/4/5 continuous scenarios), please change the hyper paramters in shell files based on understanding python stripts train_DGSM.py and train_GSM.py. Examples have also been provided as notes in the .sh files now. Make sure the file direction of your saved weights is right.
 
 
