@@ -52,7 +52,7 @@ If you want to use the default codes without changing the file directions, pleas
 
 *STEP 2:* Train the base model in one single scenario (CL is not needed in this situation). We have provided trained model in the single scenario MA in file fold "./D-GSM-training/checkpoint/social-stgcnn-MA" for further training in continuous scenarios.
 
-*STEP 3:* Train the model in contiuous scenarios by directly running .sh files: "./D-GSM-training/train_DGSM_two_mem3500.sh" and "./D-GSM-training/train_DGSM_two_mem3500.sh" are for model with D-GSM and GSM (see **Experimental settings** in the paper *Section IV-B*).
+*STEP 3:* Train the model in contiuous scenarios by directly running .sh files: "./D-GSM-training/train_DGSM_two_mem3500.sh" and "./D-GSM-training/train_DGSM_two_mem3500.sh" are for model with D-GSM and GSM (see *Experimental settings* in the paper **Section IV-B**).
 
 ```
 bash train_DGSM_two_mem3500.sh
