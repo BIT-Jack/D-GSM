@@ -30,12 +30,12 @@ These codes are the implementation of experiments described in **Appendix B** of
 ### Running
 *STEP 1:* Preprocess the raw data by using "preprocess_raw_data.m" (Please preprocess and save different scenarios seperately. The default setting is for scenario "MA".) The saved file is named "Scenario-XX.mat" (XX is the markers of a specific scenairo, e.g. "Scenario-MA.mat"). Then put the preprocessed file into "./Traffic Divergence Measuring/data" file fold. 
 
-*STEP 2:* Use "data_extraction.py" to obtain the final processed cases. The processed file will be named "Scenario-XX-vi-j-n%.mat" ("XX" is scenario marker, and "i" is the considered number of surrounding vehicles for each case, and "j" is the considered number of eigenvectors. "n%" corresponds to the ratio of data usage. e.g."Scenario-MA-v5-3-100%.mat").
+*STEP 2:* Use "data_extraction.py" to futher process "Scenario-XX.mat" to obtain the final processed cases. The processed file will be named "Scenario-XX-vi-j-n%.mat" ("XX" is scenario marker, and "i" is the considered number of surrounding vehicles for each case, and "j" is the considered number of eigenvectors. "n%" corresponds to the ratio of data usage. e.g."Scenario-MA-v5-3-100%.mat").
 ```
 python3 data_extraction.py
 ```
 
-*STEP 3:* Use "main_cot_lap_kld.py" to estimate GMMs of scenario cases, and then, to calculate CKLDs between scenarios. We have provided a group of processed files "Scenario-XX-v5-3-100%.mat" as examples in the "data" fold. Thus, you can directly run the following codes in the terminal to start the calculation.
+* **STEP 3:** * Use "main_cot_lap_kld.py" to estimate GMMs of scenario cases, and then, to calculate CKLDs between scenarios. We have provided a group of processed files "Scenario-XX-v5-3-100%.mat" as examples in the "data" fold. Thus, you can directly run the following codes in the terminal to start the calculation.
 ```
 python3 main_cot_lap_kld.py
 ```
