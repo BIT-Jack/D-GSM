@@ -21,8 +21,22 @@ Dataset used in this paper is the publicly available *INTERACTION Dataset: An IN
 The proposed approach is plug-and-play. As an example, the Social-STGCNN model proposed in paper *Social-STGCNN: A Social Spatio-Temporal Graph Convolutional Neural Network for Human Trajectory Prediction* is adopted as base model in this work. The original base model is availble in [base model](https://github.com/abduallahmohamed/Social-STGCNN).
 
 ## General Introduction of Codes
-The file fold named "D-GSM-training" contains the implementation of the proposed dynamic-GSM. Another fold named "GSM-training" is the implementation of the proposed method without dynamic memory mechanism. And in these two folds, there are shell files to directly run the codes (if you prepare the right file path and processed data). In the shell file, the default setting is to train three continuous scenarios (corresponding to the experiment in Section IV of the paper). You can change the tasks number and datasets to implement other continual scenarios. The detailed parameter or variable names are described in annotations of .py files, please check them and make your own experiments. 
+The file fold named "D-GSM-training" contains the implementation of the proposed dynamic-GSM. Another fold named "GSM-training" is the implementation of the proposed method without dynamic memory mechanism. And in these two folds, there are shell files to directly run the codes (if you prepare the right file path and processed data). In the shell file, the default setting is to train three continuous scenarios (corresponding to the experiment in **Section IV** of the paper). You can change the tasks number and datasets to implement other continual scenarios. The detailed parameter or variable names are described in annotations of .py files, please check them and make your own experiments. 
 
-File folds named "Testing" and "Traffic Divergence Measuring" are codes for model evaluation (corresponding to Section IV-C of the paper) and the implementation of the proposed methods for measuring divergence between different scenarios (corresponding to experiments in Appendix B).
+File folds named "Testing" and "Traffic Divergence Measuring" are codes for model evaluation (corresponding to **Section IV-C** of the paper) and the implementation of the proposed methods for measuring divergence between different scenarios (corresponding to experiments in **Appendix B**).
 
 ## Usage of Codes: Traffic Divergence Measuring
+These codes are the implementation of experiments described in **Appendix B** of the paper, which explores the influence of data amount on conditional Kullback-Leibler divergence (CKLD) calculations. Under the direction "./Traffic Divergence Measuring", the file fold "data" is to contain processed cases, and "mdn_model" contains models of Mixture Density Networks (MDN) used in the paper.
+### Running
+*STEP 1:* Use "data_extraction.py" to obtain the final processed cases. The processed cases need to be saved as seperate files for different scenarios.
+'''
+python3 data_extraction.py
+'''
+*STEP 2:* Use "main_cot_lap_kld.py" to estimate GMMs of scenario cases, and then, to calculate CKLDs between scenarios.
+'''
+python3 main_cot_lap_kld.py"
+'''
+
+
+
+
