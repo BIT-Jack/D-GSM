@@ -35,7 +35,7 @@ These codes are the implementation of experiments described in **Appendix B** of
 python3 data_extraction.py
 ```
 
-* **STEP 3:** * Use "main_cot_lap_kld.py" to estimate GMMs of scenario cases, and then, to calculate CKLDs between scenarios. We have provided a group of processed files "Scenario-XX-v5-3-100%.mat" as examples in the "data" fold. Thus, you can directly run the following codes in the terminal to start the calculation.
+*STEP 3:* Use "main_cot_lap_kld.py" to estimate GMMs of scenario cases, and then, to calculate CKLDs between scenarios. We have provided a group of processed files "Scenario-XX-v5-3-100%.mat" as examples in the "data" fold. Thus, you can directly run the following codes in the terminal to start the calculation.
 ```
 python3 main_cot_lap_kld.py
 ```
