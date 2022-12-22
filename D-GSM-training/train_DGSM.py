@@ -42,8 +42,8 @@ parser.add_argument('--kernel_size', type=int, default=3)
 #Data specifc paremeters
 parser.add_argument('--obs_seq_len', type=int, default=20)
 parser.add_argument('--pred_seq_len', type=int, default=40)
-parser.add_argument('--dataset', default='MA',
-                    help='MA, FT, SR, EP, ZS')    
+parser.add_argument('--dataset', default='1-MA',
+                    help='1-MA, 2-FT, 3-ZS, 4-EP, 5-SR')    
 
 #Training specifc parameters
 parser.add_argument('--batch_size', type=int, default=128,
