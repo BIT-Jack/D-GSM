@@ -136,7 +136,7 @@ if args.cur_task == 1:
     model.load_state_dict(torch.load('./checkpoint/social-stgcnn-MA/val_best.pth'))
     #print("last model(MA) is loaded")
 elif args.cur_task == 2:
-    model.load_state_dict(torch.load('./checkpoint/social-stgcnn-FT/val_best_{:.0f}.pth'.format(int(args.mem_size/(args.cur_task-1)))))
+    model.load_state_dict(torch.load('./checkpoint/social-stgcnn-FT/val_best_{:.0f}_sch2.pth'.format(int(args.mem_size/(args.cur_task-1)))))
     #print("last model(FT) is loaded")
     #weight_allocated_mem = [0.77, 1]#max divergence 's weight equals 1
     weight_allocated_mem = [0.78, 1]
