@@ -64,3 +64,13 @@ bash train_GSM_two_mem3500.sh
 It should be noted that, as examples, the .sh files described above are set for two continuous scenarios (MA->FT) with 3,500 samples of memory data. If you want to train model further (eg. 3/4/5 continuous scenarios), please change the hyper paramters in shell files based on understanding python stripts train_DGSM.py and train_GSM.py. Examples have also been provided as notes in the .sh files now. Make sure the file direction of your saved weights is right.
 
 
+## Usage of Codes: Testing
+These codes are used to evaluate the trained models.
+
+### Running
+*STEP 1:* Set the model to be tested with the scenario data for the testing. Details for DIY settings can be found in readme.md in folds "./D-GSM/Testing/datasets" and "./D-GSM/Testing/checkpoint". We have provided an example in these folds-- the evaluation for model being contiually trained in five continuous scenarios (MA->FT->ZS->EP->SR). The performance (measured by ADE and FDE) on the first observed scenario "MA" can be shown by running:
+
+```
+python3 test.py
+```
+If you want to test for other model or scenario using default direction settings, please set the models and the testing data in the right direction.
