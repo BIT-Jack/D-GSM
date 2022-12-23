@@ -68,7 +68,9 @@ It should be noted that, as examples, the .sh files described above are set for 
 These codes are used to evaluate the trained models.
 
 ### Running
-*STEP 1:* Set the model to be tested with the scenario data for the testing. Details for DIY settings can be found in readme.md in folds "./D-GSM/Testing/datasets" and "./D-GSM/Testing/checkpoint". We have provided an example in these folds-- the evaluation for model being contiually trained in five continuous scenarios (MA->FT->ZS->EP->SR). The performance (measured by ADE and FDE) on the first observed scenario "MA" can be shown by running:
+*STEP 1:* Set the model to be tested with the scenario data for the testing. Details for DIY settings can be found in readme.md in folds "./D-GSM/Testing/datasets" and "./D-GSM/Testing/checkpoint". We have provided an example in these folds-- the evaluation for model being contiually trained in five continuous scenarios (MA->FT->ZS->EP->SR). 
+
+*STEP 2:* The performance (measured by ADE and FDE) on the first observed scenario "MA" can be shown by running:
 
 ```
 python3 test.py
