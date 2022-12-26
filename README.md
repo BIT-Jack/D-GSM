@@ -17,6 +17,8 @@ pip install -r requirements.txt
 ## Dataset
 Dataset used in this paper is the publicly available *INTERACTION Dataset: An INTERnational, Adversarial and Cooperative moTION Dataset in Interactive Driving Scenarios with Semantic Maps.* Subsets denoted as MA, FT, ZS, EP, SR are used in experiments to construct continuous scenarios. [INTERACTION](https://interaction-dataset.com/)
 
+The processed data for running example of the default setting can be download in [Processed Data](https://drive.google.com/file/d/1KVu8kqf9rOQshXAmJV3EGyW5ivyGoYG4/view?usp=share_link)
+
 ## Plug-and-play quality.
 The proposed approach is plug-and-play. As an example, the Social-STGCNN model proposed in paper *Social-STGCNN: A Social Spatio-Temporal Graph Convolutional Neural Network for Human Trajectory Prediction* is adopted as base model in this work. The original base model is availble in [base model](https://github.com/abduallahmohamed/Social-STGCNN).
 
